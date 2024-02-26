@@ -6,65 +6,124 @@
     <title>La pagina de Madouc</title>
    
     <style>
-        button { /* elementos*/
-            background-color : Red;
+        #profile_container{
+            background-color: #feefe8;
+            width: 25%;
+            height: 100vh;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+
+
+        }
+        .profile_picture{
+            border-radius: 100%;
+            width: 250px;
+            height: 250px;
+            border: 10px solid white;
+          
+
+        }
+        .profile_title{
+            color:#3a2921;
+            margin-bottom: 0.3em;
+
+        }
+        .profile_subtitle{
+            color: #c1585d;
+            margin: 0;
+
+        }
+        .profile_description{
+            color: #ae9f98;
+
+        }
+        .profile_info_container{
+            background-color: #fed9c9;
+            border-radius: 20px;
+            padding: 1em
+
+
+        }
+        .profile_info_list{
+            text-align: left;
+            list-style-type:none;
+            padding: 0;
+            color: #ae9f98;
+
+        }
+        .profile_info_list li{
+            margin: 1em;
+
         }
 
-        .blue_button{ /*clases*/
-            background-color : blue;            
-        }
+        .profile_info_button{
+            background-color: #b70209;
+            color: #feefe8;
+            border-radius: 5px;
+            border: none;
+            padding: 0.45em;
+            margin: 0.2em;
 
-        #special_button{ /*id*/
 
-            background-color: green;
         }
+   
+        
+
+        
         body{
             color: white;
             font-size: large;
             text-align: center;
             background-color: black;
+            display: flex;
+            justify-content: center;
         }
-        ul{
-            list-style:none;
-            color: blueviolet;
-        }
-        p i{ /*elemento anidado*/
-            color: red;
+      
+        
 
-        }
 
-        p , strong{ /*multiples elementos*/
-            color: violet;
-
-        }
-  
 
     </style>
 </head>
 <body>
-   <img src="assets/Madouc.jpeg" alt="Esta es Madouc, una perrita labrador" width="200" height="250" <br>
+    <section id="profile_container">
+        <img src="assets/Madouc.jpeg" class="profile_picture" alt="Esta es Madouc, una perrita labrador"  > <br>
 
-   <h1> <strong> Madouc Mengs </strong> </h1> 
+        <h1 class="profile_title"> <strong> Madouc Mengs </strong> </h1> 
+    
+        <h3 class="profile_subtitle" > Guardiana de la casa</h3>
+    
+        <p class="profile_description"> Soy una perra que se porta muy bien, <br>
+           mis padres dicen que no hago caso pero es mentira. <br>
+            Ah, me encantan las pelotas. </p>
+        <div class="profile_info_container">
+            
+                <ul class="profile_info_list">
+                    <li> <strong> Edad: </strong> 2 años. </li>
+                    <li> <strong> Edad Perruna: </strong> 14 años. </li>
+                    <li> <strong> Raza: </strong> Labrador Retriever. </li>
+                    <li> <strong> Dirección: </strong> Casita calentita en Aranjuez. </li>
+                </ul>
+        
+                <button class="profile_info_button"> Cariñosa </button> 
+                <button class="profile_info_button" > Dosil </button> <br>
+                <button class="profile_info_button"> Juguetona </button> 
+                <button class="profile_info_button"> Hambrienta </button> <br>
+                <button class="profile_info_button"> Guapa </button> 
+                <button class="profile_info_button"> Peluda </button> 
 
-   <p> Guardiana de la casa</p>
 
-   <p> Soy una perra que se porta muy bien, <br>
-    <i> mis <u> padres </u> dicen que no hago caso </i> pero es mentira. <br>
-    Ah, me encantan las pelotas. </p>
 
-    <ul>
-        <li> <strong> Edad: </strong> 2 años. </li>
-        <li> <strong> Edad Perruna: </strong> 14 años. </li>
-        <li> <strong> Raza: </strong> Labrador Retriever. </li>
-        <li> <strong> Dirección: </strong> Casita calentita en Aranjuez. </li>
-    </ul>
+        </div>
+          
 
-    <button > Cariñosa </button> 
-    <button class="blue_button" > Dosil </button> <br>
-    <button class="blue_button" id="special_button"> Juguetona </button> 
-    <button class="blue_button"> Hambrienta </button> <br>
-    <button > Guapa </button> 
-    <button > Peluda </button> 
+
+    </section>
+    
 
 </body>
 </html>
